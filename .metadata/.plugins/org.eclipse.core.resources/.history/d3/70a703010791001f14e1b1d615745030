@@ -1,0 +1,31 @@
+package basic;
+
+import java.util.Scanner;
+
+public class Sumaverage {
+
+	public static void main(String[] args) {
+		
+		int a,b,sum,avg;
+		Scanner scanner=new Scanner(System.in);
+      
+		System.out.println("Enter 2 numbers :");
+		a=scanner.nextInt();
+		b=scanner.nextInt();
+		
+		sum=a+b;
+		avg=a+b/2;
+		
+		System.out.println("The Sum of 2 numbers is       : "+sum);
+		System.out.println("The Avg of 2 numbers is       : "+avg);
+
+
+
+
+
+
+
+
+	}
+
+}

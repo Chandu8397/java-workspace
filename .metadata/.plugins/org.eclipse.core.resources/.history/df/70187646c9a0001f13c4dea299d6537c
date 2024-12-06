@@ -1,0 +1,25 @@
+package tollgate;
+
+/**
+*Author :Mekapothula.Reddy
+*Date   :12 Nov 2024
+*Time   :9:20:11 am
+*Email  :Mekapothula.Reddy@coforge.com
+*/
+
+public class TestToolBooth {
+
+	public static void main(String[] args) {
+			TollBooth booth = new HyderabadTollBooth();
+			 
+			Truck ford = new FordTruck(4, 12500, null); // 5 axles and 12500 kilograms
+			Truck nissan = new NissanTruck(6, 5000, null); // 2 axles and 5000 kg
+			Truck daewoo = new DaewooTruck(8, 17000, null); // 6 axles and 17000 kg
+			 
+			booth.calculateToll(ford);
+			booth.calculateToll(nissan);
+			booth.calculateToll(daewoo);
+			 
+			booth.collectReceipts();
+			}
+			}
